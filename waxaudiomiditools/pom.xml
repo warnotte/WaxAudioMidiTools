@@ -28,7 +28,12 @@
   		<artifactId>OBJ2GUI</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
-  	
+  	<dependency>
+					<groupId>com.thoughtworks.xstream</groupId>
+					<artifactId>xstream</artifactId>
+					<version>1.4.10-java7</version>
+				</dependency>
+				
   	  <dependency>
   		<groupId>org.warnotte</groupId>
   		<artifactId>obj2gui2</artifactId>
