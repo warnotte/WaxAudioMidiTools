@@ -6,6 +6,13 @@
   <name>Wax Audio - Midi Tools</name>
   <description>Wax Audio - Midi Tools</description>
   
+  
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>7</maven.compiler.source>	
+		<maven.compiler.target>7</maven.compiler.target>
+	</properties>
+	
    <dependencies>
   	
   	
