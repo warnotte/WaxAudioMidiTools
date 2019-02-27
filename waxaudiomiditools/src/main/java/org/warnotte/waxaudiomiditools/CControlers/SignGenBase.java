@@ -1,12 +1,13 @@
 package org.warnotte.waxaudiomiditools.CControlers;
+
 import javax.swing.JFrame;
 
 import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
 import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
-import org.warnotte.Utils.Curve.Copiable;
 import org.warnotte.obj2gui2.PROPERTY_button;
 import org.warnotte.waxlib2.TemplatePropertyMerger.property_mode;
 import org.warnotte.waxlib2.TemplatePropertyMerger.Annotations.PROPERTY_interface;
+import org.warnotte.waxlibswingcomponents.Utils.Curve.Copiable;
 
 
 
@@ -19,7 +20,7 @@ public class SignGenBase implements Syncable , Copiable
 	
 	@GUI_FIELD_TYPE(type=GUI_FIELD_TYPE.Type.METHOD_CALL, method_name="configCC")
 	@PROPERTY_button(method_name="configCC", text="CC Config")
-	private Object Bouton_2 = null; // Px importe son type en fait.
+	private final Object Bouton_2 = null; // Px importe son type en fait.
 	@GUI_FIELD_TYPE(type=GUI_FIELD_TYPE.Type.TEXTFIELD)
 	int CC = 74;
 
@@ -34,7 +35,7 @@ public class SignGenBase implements Syncable , Copiable
 	
 	@GUI_FIELD_TYPE(type=GUI_FIELD_TYPE.Type.METHOD_CALL, method_name="sync")
 	@PROPERTY_button(method_name="sync", text="Sync")
-	private Object Bouton_1 = null; // Px importe son type en fait.
+	private final Object Bouton_1 = null; // Px importe son type en fait.
 	
 	protected String name;
 		

@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.MidiUnavailableException;
@@ -78,7 +78,7 @@ public class MidiToSynth implements Receiver {
 			{
 				for (int i = 0 ; i < getSynth().getVca().size();i++)
 				{
-					VCABase ttt = (VCABase) getSynth().getVca().get(i);
+					VCABase ttt = getSynth().getVca().get(i);
 					if (ttt.isLearn()==true)
 					{
 						System.err.println("VCABase "+i+" - set to "+note+" noteon:"+NOTEON);
@@ -122,7 +122,7 @@ public class MidiToSynth implements Receiver {
 			{
 				for (int i = 0 ; i < getSynth().getVca().size();i++)
 				{
-					VCABase ttt = (VCABase) getSynth().getVca().get(i);
+					VCABase ttt = getSynth().getVca().get(i);
 					if (ttt.isLearn()==true)
 					{
 						System.err.println("VCABase "+i+" - set to "+CC);
@@ -165,12 +165,12 @@ public class MidiToSynth implements Receiver {
 		Set<Entry<VCABase, List<Filter>>> entries = getSynth().getFilters().entrySet();
 		for (Iterator<Entry<VCABase, List<Filter>>> iterator = entries.iterator(); iterator.hasNext();)
 		{
-			Entry<VCABase, List<Filter>> entry = (Entry<VCABase, List<Filter>>) iterator.next();
+			Entry<VCABase, List<Filter>> entry = iterator.next();
 			VCABase dest_ttt = entry.getKey();
 			List<Filter> filters = entry.getValue();
 			for (Iterator<Filter> iterator2 = filters.iterator(); iterator2.hasNext();)
 			{
-				Filter filter = (Filter) iterator2.next();
+				Filter filter = iterator2.next();
 				if (filter.isFiltered(message)==true)
 					if (NOTEON)
 						dest_ttt.noteOn(note);
@@ -183,7 +183,7 @@ public class MidiToSynth implements Receiver {
 		Set<Entry<VCABase, List<Filter>>> entries = getSynth().getFilters_control().entrySet();
 		for (Iterator<Entry<VCABase, List<Filter>>> iterator = entries.iterator(); iterator.hasNext();)
 		{
-			Entry<VCABase, List<Filter>> entry = (Entry<VCABase, List<Filter>>) iterator.next();
+			Entry<VCABase, List<Filter>> entry = iterator.next();
 			VCABase dest_ttt = entry.getKey();
 			List<Filter> filters = entry.getValue();
 			for (Iterator<Filter> iterator2 = filters.iterator(); iterator2.hasNext();)
@@ -209,7 +209,7 @@ public class MidiToSynth implements Receiver {
 		frame.setVisible(true);
 
 
-		// Crée la fenetre de config de cette classe.
+		// Crï¿½e la fenetre de config de cette classe.
 
 		createVcaFrame();
 		
@@ -348,7 +348,7 @@ public class MidiToSynth implements Receiver {
 	
 	public void configMidi()
 	{
-		// Crée le midi
+		// Crï¿½e le midi
 		try {
 			trans = ConfigMIDIINPUT.createWindow(trans);
 		

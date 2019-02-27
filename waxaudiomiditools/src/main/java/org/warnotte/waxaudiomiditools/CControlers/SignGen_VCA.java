@@ -2,7 +2,7 @@ package org.warnotte.waxaudiomiditools.CControlers;
 
 import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
 import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
-import org.warnotte.Utils.Curve.Copiable;
+import org.warnotte.waxlibswingcomponents.Utils.Curve.Copiable;
 
 @GUI_CLASS(type=GUI_CLASS.Type.BoxLayout, BoxLayout_property=GUI_CLASS.Type_BoxLayout.Y)
 public class SignGen_VCA extends SignGenBase implements Gateable
@@ -42,7 +42,8 @@ public class SignGen_VCA extends SignGenBase implements Gateable
     	name="VCA";
     }
     
-    public void copysettings(Copiable to)
+    @Override
+	public void copysettings(Copiable to)
 	{
 		super.copysettings(to);
 		copysettings((SignGen_VCA) to);
@@ -65,6 +66,7 @@ public class SignGen_VCA extends SignGenBase implements Gateable
     boolean flag_gate = false;
     float time_gate = 0;
 	private float old_VALEUR;
+	@Override
 	public void evolue(int Channel, long elapsedtime, float valeur_preset) {
 		super.evolue(Channel, elapsedtime, valeur_preset);
 
@@ -303,6 +305,7 @@ public class SignGen_VCA extends SignGenBase implements Gateable
 		// old_elapsedtime=elapsedtime;
 	}
 	*/
+	@Override
 	public void sync()
 	{
 		super.sync();
