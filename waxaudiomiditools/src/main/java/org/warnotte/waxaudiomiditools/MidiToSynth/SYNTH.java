@@ -6,10 +6,10 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import org.warnotte.OBJ2GUI.JWPanel;
-import org.warnotte.OBJ2GUI.ParseurAnnotations;
-import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
-import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
+import io.github.warnotte.waxlib3.OBJ2GUI.JWPanel;
+import io.github.warnotte.waxlib3.OBJ2GUI.ParseurAnnotations;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_CLASS;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
 
 
 @GUI_CLASS(type = GUI_CLASS.Type.BoxLayout, BoxLayout_property = GUI_CLASS.Type_BoxLayout.Y)

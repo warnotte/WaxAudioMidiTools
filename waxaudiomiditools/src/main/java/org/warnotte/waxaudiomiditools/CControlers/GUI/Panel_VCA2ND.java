@@ -13,8 +13,9 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 import org.warnotte.waxaudiomiditools.CControlers.SignGen_VCA_2ND;
-import org.warnotte.waxlibswingcomponents.Swing.Component.CurveEditor.CurvePanel;
-import org.warnotte.waxlibswingcomponents.Swing.Component.WaxSlider.WFlatSlider;
+
+import io.github.warnotte.waxlib3.waxlibswingcomponents.Swing.Component.CurveEditor.CurvePanel;
+import io.github.warnotte.waxlib3.waxlibswingcomponents.Swing.Component.WaxSlider.WFlatSlider;
 
 public class Panel_VCA2ND extends JPanel
 {

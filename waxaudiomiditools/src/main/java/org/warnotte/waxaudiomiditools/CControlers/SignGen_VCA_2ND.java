@@ -1,9 +1,9 @@
 package org.warnotte.waxaudiomiditools.CControlers;
 
-import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
-import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
-import org.warnotte.waxlibswingcomponents.Utils.Curve.Copiable;
-import org.warnotte.waxlibswingcomponents.Utils.Curve.Curve;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_CLASS;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
+import io.github.warnotte.waxlib3.waxlibswingcomponents.Utils.Curve.Copiable;
+import io.github.warnotte.waxlib3.waxlibswingcomponents.Utils.Curve.Curve;
 
 @GUI_CLASS(type=GUI_CLASS.Type.BoxLayout, BoxLayout_property=GUI_CLASS.Type_BoxLayout.Y)
 public class SignGen_VCA_2ND extends SignGenBase implements Gateable

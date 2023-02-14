@@ -1,13 +1,14 @@
 package org.warnotte.waxaudiomiditools.MidiToSynth;
 
-import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
-import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
-import org.warnotte.obj2gui2.PROPERTY_button;
 import org.warnotte.waxaudiomiditools.CControlers.SignGen_VCA_2ND;
 import org.warnotte.waxaudiomiditools.CControlers.SignGen_VCO;
-import org.warnotte.waxlib2.TemplatePropertyMerger.property_mode;
-import org.warnotte.waxlib2.TemplatePropertyMerger.Annotations.PROPERTY_FIELD_XXXABLE;
-import org.warnotte.waxlib2.TemplatePropertyMerger.Annotations.PROPERTY_interface;
+
+import io.github.warnotte.obj2gui2.PROPERTY_button;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_CLASS;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.property_mode;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.Annotations.PROPERTY_FIELD_XXXABLE;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.Annotations.PROPERTY_interface;
 
 @GUI_CLASS(type = GUI_CLASS.Type.BoxLayout, BoxLayout_property = GUI_CLASS.Type_BoxLayout.Y)
 public abstract class VCABase {

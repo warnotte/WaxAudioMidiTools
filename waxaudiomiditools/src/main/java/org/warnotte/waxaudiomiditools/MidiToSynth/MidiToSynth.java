@@ -26,8 +26,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 
-import org.warnotte.OBJ2GUI.ParseurAnnotations;
-import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
 import org.warnotte.waxaudiomiditools.MidiConfig.ConfigMIDIINPUT;
 import org.warnotte.waxaudiomiditools.MidiToSynth.GUI.DBTableModelTABLE_MidiCCFilter;
 import org.warnotte.waxaudiomiditools.MidiToSynth.GUI.DBTableModelTABLE_MidiFilter;
@@ -35,6 +33,9 @@ import org.warnotte.waxaudiomiditools.MidiToSynth.GUI.MyComboBoxRenderer_TARGETR
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
+
+import io.github.warnotte.waxlib3.OBJ2GUI.ParseurAnnotations;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_CLASS;
 
 @GUI_CLASS(type = GUI_CLASS.Type.BoxLayout, BoxLayout_property = GUI_CLASS.Type_BoxLayout.Y)
 public class MidiToSynth implements Receiver {

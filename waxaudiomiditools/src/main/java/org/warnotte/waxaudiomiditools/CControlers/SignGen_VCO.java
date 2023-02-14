@@ -1,10 +1,10 @@
 package org.warnotte.waxaudiomiditools.CControlers;
-import org.warnotte.OBJ2GUI.Annotations.GUI_CLASS;
-import org.warnotte.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
-import org.warnotte.waxlib2.TemplatePropertyMerger.property_mode;
-import org.warnotte.waxlib2.TemplatePropertyMerger.Annotations.PROPERTY_interface;
-import org.warnotte.waxlib2.TemplatePropertyMerger.Annotations.PROPERTY_interface.gui_type;
-import org.warnotte.waxlibswingcomponents.Utils.Curve.Copiable;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_CLASS;
+import io.github.warnotte.waxlib3.OBJ2GUI.Annotations.GUI_FIELD_TYPE;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.property_mode;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.Annotations.PROPERTY_interface;
+import io.github.warnotte.waxlib3.core.TemplatePropertyMerger.Annotations.PROPERTY_interface.gui_type;
+import io.github.warnotte.waxlib3.waxlibswingcomponents.Utils.Curve.Copiable;
 
 
 
