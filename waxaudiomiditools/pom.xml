@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.warnotte</groupId>
 	<artifactId>waxaudiomiditools</artifactId>
-	<version>0.2.0</version>
+	<version>0.2.1</version>
 	<name>Wax Audio - Midi Tools</name>
 	<description>Wax Audio - Midi Tools</description>
 
@@ -20,14 +20,14 @@
 	<dependency>
 		    <groupId>io.github.warnotte</groupId>
 		    <artifactId>waxlib3</artifactId>
-		    <version>0.0.1.5</version>
+		    <version>0.3.7</version>
 		</dependency>
 		
 
 		<dependency>
 		    <groupId>io.github.warnotte</groupId>
 		    <artifactId>obj2gui2</artifactId>
-		    <version>1.1.0</version>
+		    <version>1.4.8</version>
 		</dependency>
 	</dependencies>
 </project>
